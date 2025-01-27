@@ -3,10 +3,11 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { LiaEditSolid } from "react-icons/lia"; // Importing the edit icon
 import { AiOutlinePlusCircle } from "react-icons/ai"; // Importing the add icon
-
+import { AiOutlineDelete } from "react-icons/ai"; // Importing the delete icon
 
 const DashboardPage = () => {
   const [jobDetails, setJobDetails] = useState([]);
+  const [selectedJobs, setSelectedJobs] = useState([]); // Track selected jobs
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
@@ -38,6 +39,35 @@ const DashboardPage = () => {
     navigate("/Job_post"); // Navigate to create job page
   };
 
+  // Handle Select/Unselect Job Post
+  const handleSelectJob = (jobId) => {
+    setSelectedJobs((prevSelectedJobs) => {
+      if (prevSelectedJobs.includes(jobId)) {
+        return prevSelectedJobs.filter((id) => id !== jobId); // Remove job from selected
+      } else {
+        return [...prevSelectedJobs, jobId]; // Add job to selected
+      }
+    });
+  };
+
+  // Handle Delete Selected Jobs
+  const handleDeleteSelectedJobs = async () => {
+    try {
+      // Confirm before deleting
+      if (window.confirm("Are you sure you want to delete the selected jobs?")) {
+        for (const jobId of selectedJobs) {
+          await axios.delete(`http://127.0.0.1:8000/employer/jobdelete/${jobId}/`);
+        }
+        // After deletion, refresh the job details
+        const response = await axios.get("http://127.0.0.1:8000/employer/jobpost/");
+        setJobDetails(response.data);
+        setSelectedJobs([]); // Reset selected jobs
+      }
+    } catch (error) {
+      console.error("Error deleting jobs:", error);
+    }
+  };
+
   return (
     <div className="flex h-screen">
       {/* Main Content */}
@@ -62,12 +92,21 @@ const DashboardPage = () => {
             <a href="#" className="text-blue-600 hover:underline">
               Account Name
             </a>
-            {/* Icon for Create Job Post */}
           </div>
         </header>
 
         {/* Content */}
         <main className="flex-1 overflow-auto p-6 bg-white">
+          <div className="flex justify-end mb-4">
+            <button
+              className="bg-red-600 text-white py-2 px-4 rounded"
+              onClick={handleDeleteSelectedJobs}
+              disabled={selectedJobs.length === 0}
+            >
+              <AiOutlineDelete className="inline mr-2" />
+              Delete Selected
+            </button>
+          </div>
           <table className="w-full border-collapse border border-gray-200">
             <thead className="bg-gray-100">
               <tr>
@@ -99,7 +138,11 @@ const DashboardPage = () => {
                 jobDetails.map((jobpost, index) => (
                   <tr key={index}>
                     <td style={{ padding: "10px" }}>
-                      <input type="checkbox" />
+                      <input
+                        type="checkbox"
+                        checked={selectedJobs.includes(jobpost.id)}
+                        onChange={() => handleSelectJob(jobpost.id)}
+                      />
                     </td>
                     <td style={{ padding: "10px" }}>{jobpost.job_title}</td>
                     <td style={{ padding: "10px" }}>{jobpost.location}</td>
@@ -113,7 +156,6 @@ const DashboardPage = () => {
                         className="text-green-500 cursor-pointer text-xl hover:text-green-600"
                         onClick={() => handleEditClick(jobpost)}
                       />
-               
                     </td>
                   </tr>
                 ))

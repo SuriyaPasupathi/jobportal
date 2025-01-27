@@ -239,10 +239,14 @@ const UpdateJobPost = () => {
             <TextField
               name="date_posted"
               label="Date Posted"
+              type="date" // Date input type
               value={formData.date_posted}
               onChange={handleChange}
               fullWidth
               margin="normal"
+              InputLabelProps={{
+                shrink: true, // Makes sure the label remains above the input
+              }}
             />
             <TextField
               name="email"
@@ -259,7 +263,13 @@ const UpdateJobPost = () => {
               onChange={handleChange}
               fullWidth
               margin="normal"
-            />
+              select
+            >
+              <MenuItem value="Open">Open</MenuItem>
+              <MenuItem value="Closed">Closed</MenuItem>
+              <MenuItem value="Paused">Paused</MenuItem>
+              <MenuItem value="Filled">Filled</MenuItem>
+            </TextField>
           </div>
         );
       default:

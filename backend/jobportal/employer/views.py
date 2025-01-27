@@ -148,3 +148,12 @@ class LogoutView(APIView):
                 return Response(serializer.data, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
             
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class JobPostDetail(APIView):
+    def delete(self, request, pk, format=None):
+        try:
+            job_post = Job_Post.objects.get(pk=pk)
+            job_post.delete()
+            return Response({"message": "Job post deleted successfully."}, status=status.HTTP_204_NO_CONTENT)
+        except Job_Post.DoesNotExist:
+            return Response({"error": "Job post not found."}, status=status.HTTP_404_NOT_FOUND)

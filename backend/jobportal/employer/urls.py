@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import EmployerRegisterView, EmployerLoginView, JobPostView,JobUpdate,LogoutView
+from .views import EmployerRegisterView, EmployerLoginView, JobPostView,JobUpdate,LogoutView,JobPostDetail
 
 urlpatterns = [
     #employer create and login 
@@ -14,6 +14,7 @@ urlpatterns = [
     path('jobpost/', JobPostView.as_view(), name='jobpost-list'),
     path('job/<int:pk>/', JobUpdate.as_view(), name='job-update'),
     path('logout/', LogoutView.as_view(), name='logout'),
+    path('jobdelete/<int:pk>/', JobPostDetail.as_view(), name='jobpost-detail'),
 ]
 
 
