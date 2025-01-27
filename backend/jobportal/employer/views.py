@@ -12,6 +12,8 @@ class IsEmployer(permissions.BasePermission):
     def has_permission(self, request, view):
         return hasattr(request.user, 'is_employer') and request.user.is_employer
 
+
+
 class EmployerRegisterView(generics.CreateAPIView):
     queryset = Employer.objects.all()
     serializer_class = EmployerSerializer
