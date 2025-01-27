@@ -1,0 +1,842 @@
+/* Signup.css */
+
+.container {
+    background-color: #03081f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .sec-main{
+    width: 40%;
+    /* margin: 60px; */
+    color: #fff;
+    margin-bottom: 10px;
+    
+
+    
+  }
+  .sec-main h2{
+    text-align: center;
+       
+  }
+  .sub-sec{
+    background-color:#171b30;
+    border-radius: 20px;
+    border-width: 10px;
+    /* margin-bottom: 30px;
+    padding-bottom: 40px;
+     */
+    
+    
+  }
+  .name-sec{
+    display: flex ;
+    /* padding:0 10px 0 10px; */
+    
+    justify-content: space-between;
+  }
+  .sub-name{
+    /* width: 48%;
+    padding: 10px 4px 10px 7px;
+    border: #292d40; */
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 140px 10px 7px;
+    
+   
+    
+   
+
+  }
+  .sub-name input{
+
+    padding: 10px 10px;
+    background-color: #292d40;
+   
+
+  }
+  input{
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  .box{
+    border: 2px solid #fff;
+    padding: 60px;
+    border-radius: 50px;
+    width: 200%;
+    margin-top: auto;
+
+
+  }
+  label{
+    color: #fff;
+  }
+  h1{
+    color:#fff;
+    margin-top: 0px;
+    text-align: center;
+    
+  }
+  button{
+    padding: 5px;
+  }
+  .mainsection{
+    width: 40%;
+    margin: auto;
+  }
+  /* Style for the wrapper container */
+.input1 {
+  position: relative;
+  width: 100%;
+  max-width: 150px; /* Adjust width as needed */
+  margin-bottom: 15px;
+  color: #fff
+}
+
+
+
+/* Style for the icon */
+.input1 .icon {
+  position: absolute;
+  top: 48%;
+  left: 10px; /* Adjust based on desired spacing */
+  transform: translateY(-50%);
+  font-size: 20px; /* Adjust size of the icon */
+}
+
+/* Style for the input field */
+.input1 input {
+  width: 220px;
+  padding: 8px 10px 8px 40px; /* Add padding to prevent text overlap with the icon */
+  color: #fff;
+  border-radius: 25px; /* For rounded input field */
+  font-size: 16px;
+  outline: none;
+  margin-top: 15px;
+}
+
+
+
+/* Optional: Add hover or focus styles */
+.input1 input:focus {
+  border-color: blue;
+ 
+}
+
+.button-section{
+  width: 36%;
+  margin: auto;
+  
+}
+.button-section button{
+padding: 5px;
+border-radius: 20px;
+width: 90%;
+margin-bottom: 20px;
+background-color: #4287f5;
+color: #fff;
+font-size: medium;
+
+
+
+}
+
+.input2 input {
+  width: 350%;
+  padding: 8px 24px 10px 40px; /* Add padding to prevent text overlap with the icon */
+  
+  border-radius: 25px; /* For rounded input field */
+  font-size: 16px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.input2 .icon {
+  position: absolute;
+  top: 48%;
+  left: 10px; /* Adjust based on desired spacing */
+  transform: translateY(-50%);
+  font-size: 20px; /* Adjust size of the icon */
+}
+
+.input2 {
+  position: relative;
+  width: 100%;
+  max-width: 150px; /* Adjust width as needed */
+  margin-bottom: 15px;
+}
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header container */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#03081f;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo img {
+  display: block;
+  border-radius: 8px;
+}
+
+/* Navbar buttons */
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin-left: 120px;
+}
+
+.buttons {
+ 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  font-size: 15px;
+ 
+  
+}
+
+.buttons:hover {
+  background-color: #0056b3;
+}
+.job-log1{
+ color: white;
+  border-radius: 25px;
+  background-color: #091433;
+  font-size: 15px;
+}
+.job-log1:hover{
+background-color:#0056b3;
+}
+
+
+/* Login buttons container */
+.login-button {
+  display: flex;
+  gap: 10px;
+}
+ 
+.section{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  
+}
+.butt-sec{
+  width: 48%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4287f5;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.button-sec{
+  display: flex;
+  gap: 100px;
+  margin-left: auto;
+  z-index: 11111;
+}
+.butt-sec3{
+  background-color: #4287f5;
+  color:white;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-bottom: 120%;
+   cursor: pointer;
+   
+}
+.butt-sec4{
+  
+  color: white;
+  border-radius: 30px;
+  background-color: #41485c;
+  font-size: 15px;
+  margin-bottom: 120%;
+   cursor: pointer;
+   
+} 
+
+
+.button-sec1{
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  position: absolute;
+}
+.job {
+  background-color: #4287f5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.job:hover {
+  background-color: #1e7e34;
+}
+.label-text{
+  color: white;
+  
+  text-align: center;
+  font-size:50px;
+}
+
+
+.text{
+  display: block;
+  font-size:50px;
+}
+.nav-bar{
+  
+  text-align: center;
+  padding-top: 20px;
+  
+}
+.job-img{
+  text-align: center;
+  gap: 20px;
+  display: block;
+
+}
+.body{
+  background-color: #03081f;
+}
+.c-logo{
+  gap: 130px;
+  margin-left: 220px;
+  display: flex;
+  margin-top: 40px;
+}
+.label {
+  font-size: 11px; 
+  color: #666666;
+  margin-bottom: 10px; 
+  text-align: center;
+  
+}
+
+.lab-text1 {
+  text-decoration: underline;
+  color: #007bff; 
+  cursor: pointer;
+}
+
+.lab-text1:hover {
+  color: #007bff; 
+}
+.label-txt{
+    font-size: 14px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+.link button {
+  background: none; 
+  border: none; 
+  color: #007bff; 
+  font-size: 14px; 
+  font-weight: bold; 
+}
+.link button:hover {
+  color: #007bff; 
+  text-decoration: none; 
+}
+
+
+
+/* joblogin */
+
+
+
+
+
+/* Container Styling */
+ 
+.containerlog {
+
+ 
+  background-color: #03081f;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  auto;
+  
+  
+}
+
+
+.secmain {
+  text-align: center;
+}
+
+.secmain h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+
+.button-first {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.butt {
+  width: 48%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4287f5;
+  border: none;
+  border-radius: 20px;
+ 
+ 
+}
+
+.butt:hover {
+  background-color: #4287f5;
+}
+
+
+.subsec {
+  /* margin-top: 20px; */
+    background-color:#171b30;
+    border-radius: 20px;
+    border-width: 10px;
+    padding: 20px;
+}
+
+.subname {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  border-width: 10px;
+}
+
+.subname label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 95%;
+}
+
+.input4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color:#171b30;
+
+}
+
+.input4 .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Position the icon inside the input */
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.input4 input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* Adjust left padding for icon space */
+  color: #fff;
+  border-radius: 5px solid black;
+  font-size: 1rem;
+  outline: none;
+  background-color:#171b30;
+  
+}
+.buttonlast {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttonlast button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4287f5;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  
+}
+
+.buttonlast button:hover {
+  background-color: #4287f5;
+}
+
+
+.lab {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.lab .lab1 {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}  
+
+
+
+/* Job page */
+.nav {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0px 0px 30%;
+}
+.button {
+ color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+  font-size: 15px;
+}
+.job-lab{
+  color: #2F2E2E;
+  text-align: center;
+  margin:70px 390px 0px 0px;
+  font-size: large;
+}
+
+
+
+/* App.css */
+
+.container-Header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  color: black;
+ 
+}
+table td th {
+  padding: 5px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+   
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto; 
+  
+}
+
+.Buttons {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+.search-bar {
+  width: 60%;
+  padding: 10px 15px;
+  margin: auto;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border:2px solid #65cdd6;
+  margin-top: 30px;
+}
+
+.search-button {  
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #f2fbfc;
+  background-color: #65cdd6;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+ right: 0px;
+ top: 44px;
+  
+}
+
+.job-section {
+  padding: 20px;
+}
+
+.job-card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  width: 50%;
+}
+
+.job-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  margin-left: 330px;
+}
+
+.save-button, .apply-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.save-button {
+  background-color: #ffffff;
+  color: #65cdd6;
+  border:1px solid #65cdd6
+}
+
+.apply-button {
+  background-color: #65cdd6;
+  color: white;
+}
+
+.job-des {
+  display: flex;
+  gap: 60px;
+}
+.option{
+  padding: 7px 20px;
+  font-size: 16px;
+  color: black;
+  border: none;
+  position: absolute;
+  left: 280px;
+  top: 45px;
+}
+
+.Select{
+  padding: 7px 20px;
+  font-size: 16px;
+  color: black;
+  border: none;
+  position: absolute;
+  left: 500px;
+  top: 45px;
+}
+.but {
+  margin-left:5px;
+ 
+}
+
+.Signin {
+  width: 90px;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #65cdd6;
+  color: #ffffff;
+  border:none;
+  padding: 10px 20px;
+}
+
+.job-layout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.job-section {
+  flex: 2;
+}
+
+.job-card {
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.job-card:hover,
+.job-card.active-job {
+  background-color: #f4f4f4;
+  border: 1px solid #007bff;
+}
+
+.job-description {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.job-description .job-detail {
+  line-height: 1.6;
+}
+
+.job-description p {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* jobseeker login */
+
+.con-tainer {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto; /* Centers horizontally */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  
+  /* Centering the container vertically */
+  position: absolute;
+  left: 40%;
+  top: 20%;
+ 
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.form {
+  margin:20px ;
+
+  
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+ 
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.separatorText {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.oauthButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.helpLink {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* employer profile */
+

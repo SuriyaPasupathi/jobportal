@@ -1,0 +1,90 @@
+/* SubscriptionCheckout.css */
+
+/* General container styles */
+.checkout-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  form h3 {
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="radio"] {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+  }
+  
+  form input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  /* Order summary styles */
+  form .order-summary {
+    background-color: #eef9ff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #cce7ff;
+  }
+  
+  form .order-summary p {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  form .order-summary p strong {
+    color: #007bff;
+  }
+  
+  /* Terms and conditions */
+  form input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  form a {
+    color: #007bff
+  }  
