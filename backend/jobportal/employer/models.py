@@ -44,23 +44,23 @@ class Job_Post(models.Model):
         return self.job_title
     
 
-class Subscription(models.Model):
-    PLAN_CHOICES = [
-        ('monthly', 'Monthly'),
-        ('threeMonths', '3 Months'),
-        ('annual', 'Annual'),
-    ]
-    plan = models.CharField(max_length=20, choices=PLAN_CHOICES)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    card_number = models.CharField(max_length=16)
-    card_expiration = models.CharField(max_length=5)  # MM/YY format
-    cvv = models.CharField(max_length=3)
-    postal_code = models.CharField(max_length=10)
-    created_at = models.DateTimeField(auto_now_add=True)
+# class Subscription(models.Model):
+#     PLAN_CHOICES = [
+#         ('monthly', 'Monthly'),
+#         ('threeMonths', '3 Months'),
+#         ('annual', 'Annual'),
+#     ]
+#     plan = models.CharField(max_length=20, choices=PLAN_CHOICES)
+#     first_name = models.CharField(max_length=50)
+#     last_name = models.CharField(max_length=50)
+#     card_number = models.CharField(max_length=16)
+#     card_expiration = models.CharField(max_length=5)  # MM/YY format
+#     cvv = models.CharField(max_length=3)
+#     postal_code = models.CharField(max_length=10)
+#     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return f"{self.first_name} {self.last_name} - {self.plan}"
+#     def __str__(self):
+#         return f"{self.first_name} {self.last_name} - {self.plan}"
 
 class UserLogoutLog(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.http import JsonResponse
-from .models import candidate
-from .serializers import candidateSerializer
+from .models import candidate,EmployerProfile
+from .serializers import candidateSerializer,EmployerProfileSerializer
 
 
 
@@ -62,3 +62,16 @@ class CandidateLoginView(APIView):
             }, status=status.HTTP_200_OK)
         else:
             return Response({'detail': 'Invalid password'}, status=status.HTTP_401_UNAUTHORIZED)
+class EmployerProfileView(APIView):
+    """
+    API endpoint for creating an employer profile.
+    """
+    def post(self, request):
+        # Handle file upload and form data
+        serializer = EmployerProfileSerializer(data=request.data)
+
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"message": "Profile submitted successfully"}, status=status.HTTP_201_CREATED)
+        
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
