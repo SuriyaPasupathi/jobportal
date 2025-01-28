@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 function ProfilePage() {
   const [profileInfo, setProfileInfo] = useState({
-    name: "Tony Stark",
-    companyName: "Stark Industries",
-    location: "New York City, NY, 8090",
+    name: "",
+    companyName: "",
+    location: "",
     logo: "", // Placeholder for the company logo
   });
 
